@@ -15,7 +15,6 @@ RUN wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghid
     unzip ghidra_10.2.2_PUBLIC_20221115.zip &&\
     mv ghidra_10.2.2_PUBLIC ghidra
 
-
 ENV GHIDRA_HOME=/machina/ghidra
 ENV GHIDRA_SCRIPTS=/machina/ghidra_scripts
 ENV USER_HOME=/machina
