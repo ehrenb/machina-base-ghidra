@@ -10,10 +10,10 @@ RUN mkdir /machina/projects
 RUN mkdir /machina/ghidra_scripts
 
 # install Ghidra to /machina/ghidra
-RUN wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.2.2_build/ghidra_10.2.2_PUBLIC_20221115.zip -P /machina && \
+RUN wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.0_build/ghidra_11.0_PUBLIC_20231222.zip -P /machina && \
     cd /machina &&\
-    unzip ghidra_10.2.2_PUBLIC_20221115.zip &&\
-    mv ghidra_10.2.2_PUBLIC ghidra
+    unzip ghidra_11.0_PUBLIC_20231222.zip &&\
+    mv ghidra_11.0_PUBLIC ghidra
 
 ENV GHIDRA_HOME=/machina/ghidra
 ENV GHIDRA_SCRIPTS=/machina/ghidra_scripts
